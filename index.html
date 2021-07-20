@@ -7748,14 +7748,19 @@ Now, there is a consistent pattern here.
 <br><br>
 Namely, they all have the <span class=italic>destination</span> as the <span class=bold>first</span> argument and the <span class=italic>source</span> as the <span class=bold>second</span> argument.
 <br><br>
-Right?<br><br><hr><br>
+Right?
+<br><br>
+<br><br>
+<span id=dummy>kkk</span>
+<hr>
+<br><br>
 Compare:
 <br><br>
-<span class="fira_code">&nbsp;&nbsp;&nbsp;&nbsp;strcpy(destination, source)</span>   <span style="font-size: 120%; color: blue;">&#10004;</span>
+<table style="background-color: white;margin-left:1em; border:0px;"><tr style="background-color:white; border:0px;"><td style="background-color:white;border:0px;"><span style="background-color:#eeeed0;padding:3px ;margin-right:0.7em;"><span class="fira_code">strcpy(destination, source)</span></span> <span style="font-size: 120%; color: blue; background-color: white;">&#10004;</span></td></tr></table>
 <br><br>
 To this:
 <br><br>
-<span class="fira_code">&nbsp;&nbsp;&nbsp;&nbsp;strcpy(source, destination)</span>   <span style="font-size: 120%; color: red;">&#10008;</span><br><br><hr><br>
+<table style="background-color: white;margin-left:1em; border:0px;"><tr style="background-color:white;border:0px;"><td style="background-color:white;border:0px;"><span style="background-color:#eeeed0;padding:3px ;margin-right:0.7em;"><span class="fira_code">strcpy(source, destination)</span></span> <span style="font-size: 120%; color: red;background-color: white; ">&#10008;</span></td></tr></table><br><br><hr><br>
 It is not rocket science to conclude that doing the opposite will get you opposite results.
 <br><br>
 Namely, if you interchange their order (and place the <span class=italic>source</span> as the first parameter and the
@@ -11720,12 +11725,7 @@ Sent on <span class=newdate               >Wednesday 13/05/2020 at 10:39</span><
 Sent on <span class=newdate               >Wednesday 13/05/2020 at 10:39</span></span>
 <p class=teacher><span class=ln> 1  </span>i0
 <span class=ln> 2  </span>q
-</p>
-<br><br>
-<br><br>
-<span id=dummy>kkk</span>
-<hr>
-<br><br>
+</p><br><br><hr><br>
 <h3 id="47.2.7"><span class=section_nr>47.2.7</span>&nbsp;&nbsp;&nbsp;&nbsp;Summary of Line Addresses Rules for the Insert Command in ed/cpt220_ed/sed/Vim</h3>
 <br><br>
 <span class=mm>Using the line '0' address for the 'insert' command,<br>
