@@ -9372,7 +9372,6 @@ The following is a summary of <span class=italic>print</span> vs. <span class=it
 Note how <span class=italic>print</span> and <span class=italic>delete</span> columns are <span class=bold>identical</span> for <span class=italic_override>ed</span>; not so for <span class=italic_override>cpt220_ed</span>.<br><br><hr><br>
 <span class=mm>Comparison of line-addresses rules for print/delete (<span class=italic_override>ed</span> vs. <span class=italic_override>cpt220_ed</span>)</span>
 <br><br>
-<span id=dummy>kkk</span>
 <table id=delete_and_print_id>
 	<tr>
 		<th rowspan=2></th>
@@ -11452,18 +11451,22 @@ during the development cycle.
 <br><br>
 But this is a good thing.
 <br><br>
-In fact, this is what you want and need when writing maintainable code.<br><br><hr><br>
+In fact, this is what you want and need when writing maintainable code.
+<br><br>
+<br><br>
+<span id=dummy>kkk</span>
+<hr>
+<br><br>
 C has other <span class=italic>constants</span> variants (including: <span class=italic>constant</span> variables or <span class=italic>macros</span> expanding to
 <span class=italic>literal constants</span>), but <span class=italic>enumeration-constants</span> have the benefit of relating all of the
 associated <span class=italic>constants</span> under a unifying <span class=italic>enum</span> structure.
 <br><br>
 This has a twofold advantage.
 <br><br>
-<span class=bold>First</span>, each one of them is (mostly) guaranteed to be unique in the context of the <span class=italic>enum</span>.
-<br><br>
-<span class=bold>Second</span>, compilers can take a cue from the <span class=italic>enum</span> definition to issue a warning if you forgot to
-account for one of its constituent <span class=italic>constants</span> in a <span class=italic>switch</span> statement (in <span class=italic>GCC</span>, for example,
-<a href=https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch><span class=italic>-Wswitch</span></a> / <a href=https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-enum><span class=italic>-Wswitch-enum</span></a>).<br><br><hr><br>
+<ul>
+<li><span class=bold>First</span>, each one of them is (mostly) guaranteed to be unique in the context of the <span class=italic>enum</span>.</li>
+<li><span class=bold>Second</span>, compilers can take a cue from the <span class=italic>enum</span> definition to issue a warning if you forgot to account for one of its constituent <span class=italic>constants</span> in a <span class=italic>switch</span> statement (in <span class=italic>GCC</span>, for example, <a href=https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch><span class=italic>-Wswitch</span></a> / <a href=https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-enum><span class=italic>-Wswitch-enum</span></a>).</li>
+</ul><br><br><hr><br>
 <h3 id="46.1.2"><span class=section_nr>46.1.2</span>&nbsp;&nbsp;&nbsp;&nbsp;Menu Represented by Enumeration Constants</h3>
 <br><br>
 Imagine developing a menu of different options for some program.
