@@ -897,3 +897,6 @@ div.appendix span.h1,div.appendix h2,div.appendix h3,div.appendix h4,div.appendi
 table {
 	table-layout:fixed;
 }
+td.align_left {
+	text-align:left;
+}

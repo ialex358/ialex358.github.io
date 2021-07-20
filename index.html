@@ -902,6 +902,9 @@ div.appendix span.h1,div.appendix h2,div.appendix h3,div.appendix h4,div.appendi
 table {
 	table-layout:fixed;
 }
+td.align_left {
+	text-align:left;
+}
 </style>
 <meta charset="utf-8"/>
 </head>
@@ -1771,7 +1774,7 @@ be true.<br><br><hr><br>
 <h3 id="1.11.2"><span class=section_nr>1.11.2</span>&nbsp;&nbsp;&nbsp;&nbsp;Students Forced to Play Dumb</h3>
 <br><br>
 You are not allowed to allege negligence, skim-reading, favouritism, discrimination, or malicious
-motives (even though they were all true allegations).
+motives (even though they were all true allegations in my case).
 <br><br>
 On the contrary.
 <br><br>
@@ -8362,7 +8365,6 @@ My full submission further demonstrated that tool in three other bugs.<br><br><h
 <span class=italic>Note: This chapter is an introduction to the following 14 chapters.</span>
 <br><br>
 <br><br>
-<span id=dummy>kkk</span>
 <h2 id="39.1"><span class=section_nr>39.1</span>&nbsp;&nbsp;&nbsp;&nbsp;Summary</h2>
 <br><br>
 The second assignment was to develop a (limited) text editor.
@@ -9370,7 +9372,8 @@ The following is a summary of <span class=italic>print</span> vs. <span class=it
 Note how <span class=italic>print</span> and <span class=italic>delete</span> columns are <span class=bold>identical</span> for <span class=italic_override>ed</span>; not so for <span class=italic_override>cpt220_ed</span>.<br><br><hr><br>
 <span class=mm>Comparison of line-addresses rules for print/delete (<span class=italic_override>ed</span> vs. <span class=italic_override>cpt220_ed</span>)</span>
 <br><br>
-<table class=print_and_delete id=delete_and_print_id>
+<span id=dummy>kkk</span>
+<table id=delete_and_print_id>
 	<tr>
 		<th rowspan=2></th>
 		<th colspan=2>ed</th>
@@ -9401,14 +9404,14 @@ Note how <span class=italic>print</span> and <span class=italic>delete</span> co
 		<td>Error</td>
 		<td>Error<span></span></td>
 		<td>Line 1</td>
-		<td style="text-align:center;">Line 1 <span class=yellow><br>and<br>Line 2</span></td>
+		<td style="text-align:center;">Line 1 <span class=yellow>and Line 2</span></td>
 	</tr>
 	<tr>
 		<td class=align_left><span class=bold>'0,2'</span> for a file with <span class=bold>3</span> lines </td>
 		<td>Error</td>
 		<td>Error<span></span></td>
 		<td>Lines 1 and 2</td>
-		<td style="text-align:center;">Lines 1, 2 <span class=yellow><br>and<br>3</span></td>
+		<td style="text-align:center;">Lines 1, 2 <span class=yellow>and 3</span></td>
 	</tr>
 	<tr>
 		<td class=align_left><span class=bold>'0,4'</span> for a file with <span class=bold>5</span> lines </td>
