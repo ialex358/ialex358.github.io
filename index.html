@@ -11451,12 +11451,7 @@ during the development cycle.
 <br><br>
 But this is a good thing.
 <br><br>
-In fact, this is what you want and need when writing maintainable code.
-<br><br>
-<br><br>
-<span id=dummy>kkk</span>
-<hr>
-<br><br>
+In fact, this is what you want and need when writing maintainable code.<br><br><hr><br>
 C has other <span class=italic>constants</span> variants (including: <span class=italic>constant</span> variables or <span class=italic>macros</span> expanding to
 <span class=italic>literal constants</span>), but <span class=italic>enumeration-constants</span> have the benefit of relating all of the
 associated <span class=italic>constants</span> under a unifying <span class=italic>enum</span> structure.
@@ -11725,13 +11720,18 @@ Sent on <span class=newdate               >Wednesday 13/05/2020 at 10:39</span><
 Sent on <span class=newdate               >Wednesday 13/05/2020 at 10:39</span></span>
 <p class=teacher><span class=ln> 1  </span>i0
 <span class=ln> 2  </span>q
-</p><br><br><hr><br>
+</p>
+<br><br>
+<br><br>
+<span id=dummy>kkk</span>
+<hr>
+<br><br>
 <h3 id="47.2.7"><span class=section_nr>47.2.7</span>&nbsp;&nbsp;&nbsp;&nbsp;Summary of Line Addresses Rules for the Insert Command in ed/cpt220_ed/sed/Vim</h3>
 <br><br>
-<span class=mm>Using the line '0' address for the 'insert' command<br>,
+<span class=mm>Using the line '0' address for the 'insert' command,<br>
 Or using the line '2' address for a file with only one line</span>
 <br><br>
-<table class=print_and_delete>
+<table>
 	<tr>
 		<th></th>
 		<th>ed</th>
@@ -11740,8 +11740,13 @@ Or using the line '2' address for a file with only one line</span>
 		<th>Vim</th>
 	</tr>
 	<tr>
-		<td class=sed_pre>Line <span class=bold>'0'</span> for an empty file<span style="display:block; color: maroon; margin-bottom:5px;">  ________________________</span>  &#x2022;  <span class=bold>'0i'</span> for <span class=italic_override>ed</span>/Vim/sed
-  &#x2022;  <span class=bold>'i0'</span> for cpt220_ed</td>
+		<td class=align_left>
+Line <span class=bold>'0'</span> for an empty file, namely:
+<ul>
+<li><span class=bold>'0i'</span> for <span class=italic_override>ed</span>/Vim/sed</li>
+<li><span class=bold>'i0'</span> for cpt220_ed</li>
+</ul>
+</td>
 		<td>Valid</td>
 		<td style="text-align:center;">Valid.<br>
 		But<br>
@@ -11750,16 +11755,24 @@ Or using the line '2' address for a file with only one line</span>
 		<td>Valid</td>
 	</tr>
 	<tr>
-		<td class=sed_pre>Line <span class=bold>'1'</span> for an empty file<span style="display:block; color: maroon; margin-bottom:5px;">  ________________________</span>  &#x2022;  <span class=bold>'1i'</span> for <span class=italic_override>ed</span>/Vim/sed
-  &#x2022;  <span class=bold>'i1'</span> for cpt220_ed</td>
+		<td class=align_left>Line <span class=bold>'1'</span> for an empty file, namely:
+<ul>
+<li><span class=bold>'1i'</span> for <span class=italic_override>ed</span>/Vim/sed</li>
+<li><span class=bold>'i1'</span> for cpt220_ed</li>
+</ul>
+</td>
 		<td>Error</td>
 		<td>Valid</td>
 		<td>Not Valid</td>
 		<td>Valid</td>
 	</tr>
 	<tr>
-		<td class=sed_pre>Line <span class=bold>'2'</span> for a file w/ 1 line<span style="display:block; color: maroon; margin-bottom:5px;">  ________________________</span>  &#x2022;  <span class=bold>'2i'</span> for <span class=italic_override>ed</span>/Vim/sed
-  &#x2022;  <span class=bold>'i2'</span> for cpt220_ed </td>
+		<td class=align_left>Line <span class=bold>'2'</span> for a file w/ 1 line, namely:
+<ul>
+<li><span class=bold>'2i'</span> for <span class=italic_override>ed</span>/Vim/sed</li>
+<li><span class=bold>'i2'</span> for cpt220_ed</li>
+</ul>
+</td>
 		<td>Error</td>
 		<td>Valid</td>
 		<td>Not Valid</td>
