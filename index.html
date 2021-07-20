@@ -2642,8 +2642,8 @@ Do you really think that RMIT has an ounce of credibility left?
 <br><br>
 And can you finally see why the office of Prof. Aleksandar Subic was eager to break <a href=#higher_education_framework>the law</a> and refused
 to submit to a <a href=#third_party>third-party</a> review?<br><br><hr><br>
-<span class=mm>Answer of RMIT to question 2(A) in the exam</span>
-        <span class=mm>'sizeof' mix-ups are emphasized</span>
+<span class=mm>Answer of RMIT to question 2(A) in the exam<br>
+'sizeof' mix-ups are emphasized</span>
 <p class=teacher><a href=#exam_227 class=ln> 227 </a>        /* allocate memory for the lines – <span class=mark>3 marks</span>
 <a href=#exam_228 class=ln> 228 </a>
 <a href=#exam_229 class=ln> 229 </a>        thedoc-&gt;lines = (struct line **)malloc(<span class=yellow>sizeof(struct line)</span> * MINLINES);
@@ -3612,15 +3612,15 @@ and (accordingly) incremented the word count.<br><br><hr><br>
 <h3 id="23.2.2"><span class=section_nr>23.2.2</span>&nbsp;&nbsp;&nbsp;&nbsp;Duplicate Code</h3>
 <br><br>
 Note how the following two blocks are identical.<br><br><hr><br>
-<span class=mm>Extract from "approved" answer 3(B)</span>
-        <span class=mm>Increments word count when reading a <span class=bold>NL</span> character</span>
+<span class=mm>Extract from "approved" answer 3(B)<br>
+Increments word count when reading a <span class=bold>NL</span> character</span>
 <p class=teacher><a href=#exam_572 class=ln> 572 </a>                                  if (isword) {
 <a href=#exam_573 class=ln> 573 </a>                                          /* [...] */
 <a href=#exam_574 class=ln> 574 </a>                                          ++ thestats.wordcount;
 <a href=#exam_575 class=ln> 575 </a>                                          isword = FALSE;
 <a href=#exam_576 class=ln> 576 </a>                                  }</p><br><br><hr><br>
-<span class=mm>Extract from "approved" answer 3(B)</span>
-        <span class=mm>Increments word count when reading a <span class=bold>space/punctuation</span> character</span>
+<span class=mm>Extract from "approved" answer 3(B)<br>
+Increments word count when reading a <span class=bold>space/punctuation</span> character</span>
 <p class=teacher><a href=#exam_615 class=ln> 615 </a>                                  if (isword) {
 <a href=#exam_616 class=ln> 616 </a>                                          thestats.wordcount++;
 <a href=#exam_617 class=ln> 617 </a>                                          isword = FALSE;
@@ -5746,8 +5746,8 @@ After <span class=bold>367 hours, 30 minutes, and 5.151 seconds</span> of intens
 The program runs for <span class=bold>0.001 seconds</span> before approving the transaction with a success message
 that <span class=italic>"all requested changes could be matched."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 1 dollar while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 1 dollar while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -5788,8 +5788,8 @@ sys         0m0.000s
 The program runs for <span class=bold>0.138 seconds</span> before finalizing its "calculations" with an error message
 that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 2 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 2 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -5831,8 +5831,8 @@ sys         0m0.000s
 The program runs for <span class=bold>0.752 seconds</span> before finalizing its "calculations" with an error message
 that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 3 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 3 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -5875,8 +5875,8 @@ sys         0m0.000s
 The program runs for <span class=bold>4.378 seconds</span> before finalizing its "calculations" with an error message
 that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 4 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 4 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -5920,8 +5920,8 @@ sys         0m0.000s
 The program runs for <span class=bold>28.235 seconds</span> before finalizing its "calculations" with an error message
 that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 5 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 5 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -5966,8 +5966,8 @@ sys         0m0.008s
 The program runs for <span class=bold>3 minutes, 25.558 seconds</span> before finalizing its "calculations" with an error
 message that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 6 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 6 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -6013,8 +6013,8 @@ sys         0m0.000s
 The program runs for <span class=bold>28 minutes, 36.125 seconds</span> before finalizing its "calculations" with an error
 message that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 7 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 7 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -6061,8 +6061,8 @@ sys         0m0.424s
 The program runs for <span class=bold>2 hours, 30 minutes, 40.784 seconds</span> before finalizing its "calculations" with
 an error message that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 8 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 8 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -6110,8 +6110,8 @@ sys         0m0.002s
 The program runs for <span class=bold>30 hours, 14 minutes, 16.717 seconds</span> before finalizing its "calculations"
 with an error message that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 9 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 9 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -6161,8 +6161,8 @@ The program runs for <span class=bold>367 hours, 30 minutes and 35.151 seconds</
 with an error message that <span class=italic>"we could not match the requested changes."</span>
 <br><br>
 <br><br>
-<span class=mm>Self-service checkout – developed and produced by RMIT</span>
-         <span class=mm>Trying to cash-out 10 dollars while there is only 1 dollar left in the system</span>
+<span class=mm>Self-service checkout – developed and produced by RMIT<br>
+Trying to cash-out 10 dollars while there is only 1 dollar left in the system</span>
 <p class="teacher make_comments_blue">$ <span class=bold>readelf -a /home/el9/E70949/shared/prog_in_c/assignments/a1/smaple/cpt220_menu_system \</span>
 <span class=bold>| grep 'Build ID'</span>
     Build ID: c870dd928f370f0ec12ae12e71fcbbc9059bb5f6
@@ -7353,8 +7353,8 @@ In the following, the Unit Coordinator discussed whether we had to use <span cla
 His verdict was: <span class=italic>"<a href=#up_to_you>up to you</a>"</span>.
 <br><br>
 I had done so by using <span class=italic>libasan</span>, only to be <a href=#a2p1_tools>given</a> zero marks.<br><br><hr><br>
-<span class=mm>Week 6 – Group A – Tutorial Chat</span>
-        <span class=mm>On 31/12/2020 19:30</span>
+<span class=mm>Week 6 – Group A – Tutorial Chat<br>
+On 31/12/2020 19:30</span>
 <br><br>
 <blockquote>[...] The next thing to do before we finish
 is I wanted to show how to use <span class=yellow>libsanitizer</span>: "make
@@ -7408,8 +7408,8 @@ repeated for each of the 5 bugs.
 This was the source code for the compiled program.
 <br><br>
 Student had to find five bugs in the following file.<br><br><hr id=phonebk_strtok.c><br>
-<span class="mm">/home/el9/E70949/shared/prog_in_c/assignments/a2/debugginglabs/lab3/phonebk_strtok.c</span class=mm>
-        <span class="mm">The source code for the (intentionally buggy) program of assignment 2(A)</span class=mm>
+<span class="mm">/home/el9/E70949/shared/prog_in_c/assignments/a2/debugginglabs/lab3/phonebk_strtok.c<br>
+The source code for the (intentionally buggy) program of assignment 2(A)</span class=mm>
 <p class=teacher><span class=ln id=phonebk_strtok.c_1>   1  </span>#include &lt;stdio.h&gt;
 <span class=ln id=phonebk_strtok.c_2>   2  </span>#include &lt;stdlib.h&gt;
 <span class=ln id=phonebk_strtok.c_3>   3  </span>#include "fsupport.h"
@@ -7822,8 +7822,8 @@ As expected, it consisted of a rewrite of the line by ordering the arguments in 
 <br><br>
 Written in Unix <span class=italic>diff</span> convention, it reads:
 <br><br>
-<span class=mm>Bug 4 submission for assignment 2(A)</span>
-        <span class=mm>Submitted on <span class=newdate                       >Sunday 12/01/2020 at 16:21</span></span>
+<span class=mm>Bug 4 submission for assignment 2(A)<br>
+Submitted on <span class=newdate                       >Sunday 12/01/2020 at 16:21</span></span>
 <p class=teacher><a class=ln href=#a2p1_strcpy_16> 16 </a>        – strcpy(line, linecpy);
 <a class=ln href=#a2p1_strcpy_17> 17 </a>        + strcpy(linecpy, line);
 </p><br><br><hr><br>
@@ -9321,8 +9321,8 @@ Because <span class=italic_override>cpt220_ed</span> mistakenly <a href=#fileio.
 <br><br>
 Namely, it misinterprets the lack of a newline as if the line's length exceeded the specified size of
 the second argument to <span class=italic>fgets()</span>.<br><br><hr><br>
-<span class=mm>Assignment 2(B): Solution of RMIT: fileio.c</span>
-        <span class=mm>Released on <span class=newdate                      >Monday 03/02/2020 at 17:00</span></span>
+<span class=mm>Assignment 2(B): Solution of RMIT: fileio.c<br>
+Released on <span class=newdate                      >Monday 03/02/2020 at 17:00</span></span>
 <p class=teacher><a class=ln href=#fileio.c_teacher_35> 35 </a>        while (fgets(line, BUFSIZ + EXTRACHARS, reader))
 <a class=ln href=#fileio.c_teacher_36> 36 </a>        {
 <a class=ln href=#fileio.c_teacher_37> 37 </a>                ssize_t len;
@@ -9514,8 +9514,8 @@ As always, RMIT was short in resources to fix the bugs but promised to <span cla
 grading the assignments.<br><br><hr><br>
 My assignment submission discussed the above.
 <br><br>
-<span class=mm>Extract from 'readme.txt' of assignment 2(C)</span>
-        <span class=mm>submitted on <span class=newdate                       >Wednesday 12/02/2020 at 19:27</span></span>
+<span class=mm>Extract from 'readme.txt' of assignment 2(C)<br>
+submitted on <span class=newdate                       >Wednesday 12/02/2020 at 19:27</span></span>
 <p class=student><span class=ln id=readme_txt_55>  55  </span>10)   The sample program will *delete* instead of replace in the following command:
 <span class=ln id=readme_txt_56>  56  </span>              r/a/g/
 <span class=ln id=readme_txt_57>  57  </span>
