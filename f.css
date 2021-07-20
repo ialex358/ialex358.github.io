@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Fira+Code:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+table {
+	max-width: calc(110em * 0.5);
+}
+body {
+	font-size:14px;
+	max-width: calc(110em * 0.5);
+}
+* {
+	font-variant-ligatures: none;
+}
+
+
+
+
+p.exam, p.teacher, p.student, p.exam, p.exam *, p.teacher *, p.student * , p.exam * {
+	white-space:pre;
+	font-family:'JetBrains mono' !important;
+	font-style:normal;
+}
+
+p.exam, p.teacher, p.student, p.exam {
+	border:1px maroon solid;
+/*	background-color:#eeeed0;*/
+	background-color:#eeeed0;
+	padding-left: 0.6em;
+	font-weight:normal;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:0px;
+}
+
+span.exam_hdr {
+	font-weight:bold;
+	font-family:'JetBrains mono';
+	font-style:normal !important;
+	text-decoration:underline;
+}
+span.num_italic {
+	font-style:italic;
+	color:#666;
+}
+
+span.ln, a.valgrind_ln, span.valgrind_ln {
+	font-weight:normal !important;
+	font-size:95%;
+	color:#666;
+}
+
+p.teacher span.mark{
+	color: red;
+/*	background-color:red;*/
+/*	font-style:italic;*/
+/*	font-weight:bold;*/
+	font-style:italic !important;
+}
+p.student span.mark{
+	color: blue;
+/*	font-weight:bold;*/
+	font-style:italic !important;
+}
+
+
+blockquote, blockquote span {
+	font-family:'JetBrains mono';
+}
+
+blockquote {
+	display:inline-block;
+	background-color:#eeeed0;
+	color:maroon;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding:0.3em 0.3em 0.3em 5em;
+	border-left:4px solid maroon ;
+	position: relative;
+}
+
+blockquote::before{
+	font-family:georgia;
+	content: "\201C";
+	font-size: 4.0em;
+	color:maroon;
+	position: absolute;
+	left: 5px;
+	top:-4px;
+}
+
+
+span.code {
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+}
+span.bold {
+	font-weight:bold;
+/*	font-family:"eb garamond";*/
+}
+
+span.blockquote_hdr {
+	font-style:normal;
+	border-bottom:1px solid maroon ;
+	font-style:normal !important;
+	font-weight:bold;
+	font-family:'JetBrains mono';
+}
+
+p.teacher span.bold, p.student span.bold, blockquote span.bold, p.exam span.bold {
+	font-weight:bold;
+	font-family:'JetBrains mono';
+}
+span.valgrind_pid {
+	color:brown;
+}
+span.valgrind_addr {
+	color:red;
+}
+span.valgrind_func {
+	color:green;
+}
+span.valgrind_fname {
+	color:purple;
+}
+span.valgrind_ln, a.valgrind_ln {
+	color:gray;
+}
+a.valgrind_ln {
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+}
+
+span.mm a.mmln {
+	background-color:white;
+	background-color:#f5f5f5
+}
+span.mm, span.mm a {
+	font-style:normal !important;
+	background-color:#eeeed0;
+/*	font-family:'JetBrains mono';*/
+display:inline-block;
+/*line-height:1.4em;*/
+color:black;
+}
+span.valgrind_leak_chunk_hdr {
+	font-weight: bold;
+	background-color: #dddddd;
+	background-color: yellow;
+}
+span.indent_off {
+	background-color:red;
+	color: yellow;
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+	font-weight:bold;
+}
+span.the_colon{
+/*	color: maroon;*/
+}
+span.the_lineno{
+/*	color: maroon;*/
+}
+span.a2p1_q {
+	color: darkblue;
+}
+span.discu_board {
+	background-color: #ccc;
+	font-style:normal;
+	font-weight:normal;
+}
+span.valgrind_sig {
+	background-color: red;
+	color:yellow;
+	font-weight: bold;
+}
+span.scrabble_hdr{
+	font-weight: normal;
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+	font-style:normal;
+	border-bottom:1px solid maroon ;
+	font-size:110%;
+}
+table.writing_system  * {
+	font-style:normal !important;
+white-space: normal !important;
+}
+table.writing_system {
+padding-right: 2em;
+border-collapse:collapse;
+}
+th {
+	text-align:center;
+	color:indigo;
+}
+
+td {
+	text-align:center;
+}
+table, tr, td, th {
+	border: 1px solid maroon;
+}
+th , td {
+	padding:5px;
+}
+span.cover_title {
+	color:blue;
+}
+span.cover_part {
+	color:maroon;
+}
+
+span.github_file {
+	color:black;
+	border-bottom:1px solid blue ;
+}
+span.github_line {
+	color:black;
+}
+span.github_content {
+	color:indigo;
+	border-bottom:1px solid blue ;
+}
+span.github_return_block a , span.github_return_block span.ln {
+	text-decoration:none;
+}
+span.yellow{
+	font-style:inherit;
+	font-weight:bold;
+	background-color:cyan;
+	border-bottom:1px solid PaleTurquoise;
+}
+
+blockquote.scrabble span.bold  {
+	font-style:normal;
+}
+
+
+
+span.github_return_block a , span.github_return_block span.ln {
+	text-decoration:none !important;
+	border-bottom:0px solid darkblue ;
+}
+
+span.s12, p.s12, a.s12 {
+}
+
+span.s13, p.s13, a.s13 {
+}
+span.s14, p.s14, a.s14 {
+}
+span.s15, p.s15, a.s15 {
+}
+span.s17, p.s17, a.s17 {
+}
+span.s11, p.s11, a.s11 {
+}
+
+span.s8, p.s8, a.s8, span.s8 *, p.s8 *, a.s8 * {
+}
+span.s10, p.s10, a.s10 {
+}
+span.noborder {
+	border:2px solid white !important;
+}
+
+span.big_txt_line_count {
+	font-style:normal !important;
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+}
+blockquote a{
+	font-style:normal;
+}
+span.big_txt_range {
+	color:maroon;
+}
+span.big_txt_fname {
+	color: black;
+	font-style:italic ;
+}
+
+
+span.objdump_addr {
+	color:darkblue;
+}
+span.objdump_instructions {
+	color:maroon;
+}
+span.objdump_opcode {
+	color: green;
+}
+span.fira_code {
+	font-family:'JetBrains mono';
+}
+
+table.print_and_delete {
+white-space: normal !important;
+padding-right: 2em;
+border-collapse:collapse;
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+}
+table.print_and_delete th {
+	text-align:center;
+	color:maroon;
+}
+table.print_and_delete td {
+	white-space:normal;
+	color:black;
+	text-align:center;
+}
+table.print_and_delete table, table.print_and_delete tr, table.print_and_delete td, table.print_and_delete th {
+	border: 1px solid maroon;
+}
+table.print_and_delete th , table.print_and_delete td {
+	padding:5px;
+}
+
+table.ed th , table.ed td {
+	padding:11px;
+}
+table.ed hr {
+	color:#e8e8e8;
+}
+
+p.comments .bold {
+	color:blue !important;
+	font-weight:normal !important;
+}
+h2, .h2{
+	color:maroon;
+	padding: 2px;
+	padding-left:15px;
+	font-weight: normal;
+	font-family:'eb garamond';
+}
+h3, .h3{
+	padding: 2px;
+	color:maroon;
+	padding-left:15px;
+	font-weight:bold !important;
+	color:maroon;
+}
+h1 {
+	display:block;
+	font-weight:bold;
+	padding: 3px;
+	padding-left:15px;
+	font-family:'eb garamond';
+}
+
+span.newdate  {
+	color:black;
+}
+ol.testfiles li {
+	margin-left:2em;
+}
+
+
+
+span.note {
+	padding:11px 8px;
+	font-family:'eb garamond';
+	background-color:#eeeed0;
+	border: 1px solid maroon;
+	display:block;
+}
+
+p.define_return {
+	line-height:2.5em;
+}
+
+p.define_return, p.define_return *{
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+	font-weight: normal !important;
+
+}
+
+a.ln {
+	font-style:normal !important;
+	font-family:'JetBrains mono' !important;
+	font-weight:normal !important;
+	color: maroon;
+}
+
+th.text {
+	background-color:#ddd;
+	color:darkblue !important;
+}
+span.sec{
+	color: darkblue;
+}
+
+table.ed a, table.print_and_delete a {
+	font-family:'JetBrains mono';
+}
+
+div.ou span.bold {
+	color:firebrick;
+	color:darkblue;
+	color:maroon;
+	font-weight: normal;
+	line-height:1.6em;
+}
+
+span.sh_dollar {
+/*	background-color:#d5d5d5;*/
+/*	font-weight: bold;*/
+/*	color: darkgreen;*/
+}
+span.sh_comment {
+	color:darkblue;
+}
+span.sh_comment span.bold{
+	font-weight: normal;
+}
+table.writing_system a {
+	font-style:normal !important;
+	font-family:"JetBrains mono";
+}
+
+ol.testfiles li:before {
+	content:"";
+	width:8px;
+	display:inline-block;
+}
+
+p.the_kernel a{
+	font-style:normal !important;
+	font-family:'JetBrains mono' !important;
+}
+p.the_kernel {
+	line-height:2em;
+}
+
+.books_big_txt span.bold{
+	font-weight: normal;
+}
+span.details_l1 {
+	color:black;
+}
+span.big_txt_list span.details_l2 {
+	color:maroon;
+}
+span.big_txt_list {
+	line-height:1.8em;
+	display:block;
+	margin-left:2em;
+	background-color:#eeeed0;
+	border: 1px solid maroon;
+	padding:8px;
+}
+
+span.big_txt_list, span.big_txt_list *{
+	font-family:'JetBrains mono' !important;
+	font-weight:normal;
+}
+
+span.gray {
+	background-color: #eeeed0;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-weight:bold;
+}
+
+p.make_comments_blue span.gray {
+	color:darkblue !important;
+	border: 0px !important;
+	font-weight:normal !important;
+	background-color: transparent;
+}
+span#dummy {
+	color: red;
+}
+
+span.mm span.newdate, span.citation_source span.newdate ,span.mm_citation span.newdate p.teacher span.newdate{
+	font-family:inherit;
+	background-color: inherit;
+	color:inherit;
+	font-size: inherit;
+	font-style:inherit;
+}
+span.scrabble_emails .newdate {
+	font-style:normal !important;
+	font-family:"JetBrains mono";
+	font-style:inherit;
+}
+span.unicode_cross {
+	line-height:0px;
+}
+span.unicode_square {
+	line-height:0px;
+}
+span.unicode_dbg_tick {
+	color: maroon;
+	line-height:0px;
+}
+span.unicode_dbg_square {
+	color: maroon;
+	line-height:0px;
+}
+
+p.a1p3_comments .ln {
+	color: maroon;
+}
+p.a1p3_comments {
+	background-color: #eeeed0;
+	line-height:2.2em;
+	border: 1px solid maroon;
+	padding:8px;
+}
+
+p.a1p3_comments, p.a1p3_comments *{
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+	font-weight: normal !important;
+}
+
+table tr {
+	background-color:#eeeed0;
+
+}
+
+table span.gray {
+	background-color:#fff;
+}
+hr {
+	height: 0px;
+	max-height: 0px;
+	border:0px;
+	border-bottom: 1px #cccccc solid;
+	line-height:0px;
+}
+div.rtl{
+	direction:rtl;
+	font-family:Arimo;
+}
+.heb {
+	width: 4.9em;
+	color: firebrick;
+	color:maroon;
+	display:inline-block;
+}
+span.trans{
+	color: black;
+/*	font-style:normal !important;*/
+	font-family:"JetBrains mono";
+	font-style:italic;
+}
+
+span.rtl_dot {
+	font-family:'eb garamond';
+}
+span.citation_source {
+	font-style:italic;
+	color:darkblue;
+}
+p.maroon {
+/*	color:maroon;*/
+}
+
+span.cpt220_and_ed_diff, span.cpt220_and_ed_diff * {
+	font-family:'JetBrains mono';
+}
+
+span.cpt220_and_ed_diff {
+	background-color: #eeeed0;
+	display:block;
+	margin-left:2em;
+	padding:15px 2em;
+	border: 1px maroon solid;
+}
+span.cpt220_and_ed_diff span.gray {
+	background-color: white;
+}
+
+p.pushup span.bold {
+	background-color:white;
+	font-style:normal !important;
+	font-family:"JetBrains mono" !important;
+}
+span.debugging_tools_list {
+	display:block;
+	margin-top:14px;
+	font-style:normal !important;
+	font-family:"JetBrains mono" !important;
+	color:maroon;
+}
+span.debugging_tools_list span.tools_line span.gray {
+	color:black;
+	border-bottom: 1px solid #cccccc;
+}
+
+span.debugging_tools_list span.tools_line {
+	display:block;
+}
+
+p,table {
+	margin-bottom:0mm !important;
+}
+
+td.td_middle {
+	text-align:center !important;
+}
+
+span.mm span.newdate {
+	border-bottom: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+
+p.save_changes span.gray {
+	background-color:white;
+	font-family:'eb garamond';
+	border: 1px solid black;
+	border-radius:2px;
+	padding-left:8px;
+	padding-right:8px;
+}
+p.save_changes span.yellow{
+	color: maroon;
+	border: 0px;
+	background-color:inherit;
+	font-family:'eb garamond';
+}
+p.save_changes {
+	white-space:pre;
+	margin-left:3em;
+	background-color:#eeeed0;
+	border-radius:8px;
+	padding:13px 18px;
+	border:1px solid maroon;
+	font-style:normal !important;
+	font-family:"JetBrains mono" !important;
+	display:inline-block;
+	font-weight: bold;
+	line-height:2.5em;
+}
+.triangle {
+	font-family:'eb garamond';
+	font-weight:bold;
+	color: #000000;
+}
+
+table.print_and_delete td.sed_pre {
+	white-space: pre;
+	text-align:left !important;
+}
+
+p.slots span.gray {
+	background-color:white;
+}
+p.slots {
+	padding:8px 20px;
+	background-color:#eeeed0;
+	border: 1px solid maroon;
+	line-height:2em;
+	display:inline-block;
+	margin-top: 14px;
+	margin-left:2em;
+}
+
+html, body {
+	overflow-x : auto !important;
+}
+span.mm a {
+	background-color:#f6f6d6;
+}
+p.teacher_line_height {
+	line-height:1.8em;
+}
+ h3 {
+	font-family:'eb garamond';
+}
+
+p.make_gray_white span.gray {
+	background-color:white;
+}
+
+table.print_and_delete td.align_left {
+	text-align:left ;
+	white-space:pre ;
+}
+div.mm_p_mm {
+	background-color:#eeeed0;
+	font-style:normal !important;
+	margin-bottom:0em !important;
+	padding:6px 25px;
+	border: 1px solid maroon;
+	border-left:8px maroon solid;
+	border-right:8px maroon solid;
+}
+
+
+.make_gray_white span.gray {
+	background-color:white;
+}
+span.box{
+	display:block;
+	font-style:normal !important;
+	font-family:'JetBrains mono';
+}
+
+span.italic {
+	font-style:italic;
+}
+span.color_inherit span.newdate{
+	background-color:inherit;
+	border-bottom:0px;
+}
+/*span.exam_hdr *, blockquote *, blockquote span *, span.code *, span.blockquote_hdr *, p.teacher span.bold *, p.student span.bold *, blockquote span.bold *, p.exam span.bold *, a.valgrind_ln *, span.mm *, span.mm a *, span.indent_off *, span.scrabble_hdr *, span.big_txt_line_count *, span.fira_code *, span.cpt220_ed *, table.print_and_delete *, p.define_return *, a.ln *, , table.writing_system a *, p.the_kernel a *, span.big_txt_list *, span.scrabble_emails .newdate *, p.a1p3_comments *, span.trans *, span.cpt220_and_ed_diff *, p.pushup span.bold *, span.debugging_tools_list *, p.save_changes *, div.mm_p_mm *, span.box * {*/
+/*	font-style:normal !important;*/
+/*}*/
+
+span.small_caps{
+/*text-transform:lowercase;*/
+font-size:86%;
+}
+
+span.citation_source {
+	font-style:italic !important;
+}
+blockquote{
+	font-weight:400;
+}
+h3, h4 {
+	font-weight:normal !important;
+}
+.siman {
+	font-style:italic ;
+}
+.section_nr {
+/*	padding-right:12px;*/
+	font-style:italic;
+font-weight:bold;
+	color:black;
+}
+span.dots{
+}
+span.page_nr {
+}
+
+
+h1 span.h1_line {
+	color:maroon;
+	margin-left:20px;
+}
+
+
+h2, h3 {
+	padding:1px;
+	padding-left:15px;
+	font-weight:bold !important;
+	font-family:'eb garamond';
+}
+h1 {
+	font-weight:bold;
+}
+span.italic_override {
+	font-style:italic !important;
+}
+
+
+div.appendix .h2 , div.appendix .h3 {
+	font-family:'eb garamond';
+	font-weight:bold !important;
+	color: black;
+}
+div.appendix .h2 {
+}
+span.h1_dash {
+	color:black;
+}
+span.tetragraph span.bold {
+color:firebrick;
+font-weight:normal;
+}
+span.pdf_viewer {
+	font-style:italic;
+	display:block;
+	text-align:center;
+	margin-top:80px;
+	padding:10px;
+	margin-left:4em;
+	margin-right:4em;
+	border:1px black solid;
+}
+span.line_through {
+	text-decoration:line-through;
+}
+div.toc {
+	font-family:"eb garamond";
+	font-size:1.2em;
+	margin-left:1em;
+}
+div.toc a {
+	text-decoration:none;
+	display:inline-block;
+}
+div.toc a.level1 {
+	margin-left:0em;
+}
+div.toc a.level2 {
+	margin-left:3em;
+}
+div.toc a.level3 {
+	margin-left:6em;
+}
+div.toc a span.toc_section  {
+	font-weight:bold;
+	white-space:nowrap;
+	color: black;
+}
+div.toc a span.toc_title  {
+	white-space:normal;
+	margin-left:1em;
+}
+p.mono {
+	font-family:'JetBrains mono' !important;
+}
+
+div.box {
+	border:1px maroon solid;
+	display:inline-block;
+	overflow-x:auto;
+	background-color:#eeeed0;
+	padding: 5px 8px;
+}
+
+ul, ol {
+	margin:0.5em 0;
+}
+
+ul li:not(:last-child), ol li:not(:last-child) {
+	margin-bottom:1em;
+}
+div.toc a:not(:last-of-type) {
+	margin-bottom:1em;
+}
+p.teacher {
+	overflow-x:auto;
+}
+div.appendix {
+	white-space:pre;
+}
+p.teacher, p.student, p.exam {
+font-size:88%;
+overflow-x:auto;
+overflow-y:auto;
+}
+hr.chapter_hr {
+/*	border-top:medium double maroon !important;*/
+	border:0px;
+	border-top:5px solid maroon !important;
+}
+
+span.toc_title span:not(:last-of-type)::after {
+	content: "—";
+}
+
+table {
+	border-collapse:collapse;
+	overflow-x:auto;
+	border: 1px solid maroon;
+}
+ul li, ol li {
+padding-left:1em;
+}
+ul {
+list-style-type: "•";
+}
+blockquote {
+	margin-top:1em;
+}
+td.left {
+	text-align:left;
+}
+blockquote {
+white-space:normal;
+}
+h1,h2,h3, .h1, .h2, .h3{
+	background-image: -webkit-linear-gradient(left, #eeeed0, #fff);
+}
+li.square {
+	list-style-type:square;
+}
+h2,h3 {
+	color: maroon;
+}
+div.appendix span.h1,div.appendix h2,div.appendix h3,div.appendix h4,div.appendix h5,div.appendix h6{
+	display:inline;
+}
+table {
+	table-layout:fixed;
+}
